@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Dark mode is turned on by adding the "dark" class to <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Lets us write bg-accent, text-accent, etc. The value is set from Settings */
+@theme inline {
+  --color-accent: var(--accent);
+}
